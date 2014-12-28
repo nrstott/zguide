@@ -66,7 +66,8 @@ function clientTask() {
   }, 10);
 }
 
-/* This is our server task.
+/**
+ * This is our server task.
  * It uses the multithreaded server model to deal requests out to a pool
  * of workers and route replies back to clients. One worker can handle
  * one request at a time but one client can talk to multiple workers at
@@ -96,7 +97,8 @@ function serverTask() {
   return [frontend, backend];
 }
 
-/* Each worker task works on one request at a time and sends a random number
+/**
+ * Each worker task works on one request at a time and sends a random number
  * of replies back, with random delays between replies.
  */
 function serverWorker() {
